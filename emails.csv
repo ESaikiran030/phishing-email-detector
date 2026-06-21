@@ -1,0 +1,13 @@
+subject,body,label
+Urgent Account Update,Click here to verify your account immediately,phishing
+Bank Verification,Update your password now,phishing
+Security Alert,Your account has been compromised login now,phishing
+Prize Winner,Congratulations claim your reward now,phishing
+Limited Offer,Click here to receive your prize,phishing
+Account Locked,Verify your account immediately,phishing
+Meeting Schedule,Let's discuss the project tomorrow,safe
+Project Update,Weekly team progress report,safe
+Company Notice,Office meeting on Monday,safe
+Internship Offer,Interview scheduled for next week,safe
+Report Submission,Submit your project report,safe
+Team Collaboration,Please review attached document,safe

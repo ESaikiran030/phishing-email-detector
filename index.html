@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detector</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛡️ Phishing Email Detection System</h1>
+
+    <p>Paste an email below to check whether it is phishing or safe.</p>
+
+    <textarea
+        id="email"
+        placeholder="Paste email content here...">
+    </textarea>
+
+    <button onclick="detectEmail()">
+        Analyze Email
+    </button>
+
+    <div id="result"></div>
+
+    <div class="cm">
+        <img src="{{ url_for('static', filename='confusion_matrix.png') }}" alt="confusion matrix">
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
