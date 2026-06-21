@@ -1,39 +1,47 @@
-Phishing Email Detector
+# 🛡️ Phishing Email Detection System
 
-Overview
-- Simple Flask app and training script that classifies emails as `phishing` or `safe`.
+A Machine Learning-based web application that detects phishing emails using Natural Language Processing (NLP), TF-IDF Vectorization, and Scikit-Learn.
 
-Files
-- `train_model.py`: trains the model, produces `phishing_model.pkl`, `vectorizer.pkl`, and saves a confusion matrix at `static/confusion_matrix.png`.
-- `app.py`: Flask app exposing `/` and `/predict` endpoints.
-- `templates/index.html`, `static/style.css`, `static/script.js`: frontend.
-- `dataset/emails.csv`: sample dataset.
-- `requirements.txt`: Python dependencies.
+## Features
 
-Quick start
+* Detects phishing and legitimate emails
+* URL detection and analysis
+* Suspicious keyword detection
+* Confidence score prediction
+* Confusion Matrix visualization
+* Flask-based web interface
 
-1. Create a virtualenv and install dependencies:
+## Technologies Used
+
+* Python
+* Flask
+* Scikit-Learn
+* Pandas
+* HTML
+* CSS
+* JavaScript
+
+## Installation
 
 ```bash
-python -m venv venv
-venv\Scripts\activate    # Windows
 pip install -r requirements.txt
-```
-
-2. Train the model:
-
-```bash
 python train_model.py
-```
-
-3. Run the app:
-
-```bash
 python app.py
 ```
 
-4. Open http://127.0.0.1:5000 in your browser and paste an email to test.
+## Project Structure
 
-Notes
-- Training script now combines TF-IDF text features with numeric URL/keyword counts for better detection.
-- If your dataset is larger, consider using a stronger classifier or performing cross-validation.
+```text
+app.py
+train_model.py
+index.html
+style.css
+script.js
+requirements.txt
+```
+
+## Author
+
+Sai Kiran Eda
+B.Tech Information Technology
+Lakireddy Balireddy College of Engineering
